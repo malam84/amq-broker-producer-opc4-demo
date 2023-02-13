@@ -1,6 +1,8 @@
 package com.amqp.client.ocp4.demo.pojo;
 
-public class Message {
+import java.io.Serializable;
+
+public class Message implements Serializable {
 	
 	private String msgName;
 	private String value;

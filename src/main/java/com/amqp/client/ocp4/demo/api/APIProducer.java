@@ -27,7 +27,9 @@ public class APIProducer {
 		try {
 	       	aMQProducerSvs.sendMsg(msg);
 		} catch(JmsException e) {
-			System.out.println("=======" +e.getStackTrace());
+			System.out.println("=======" +e.getMessage());
+			System.out.println("=======" +e.getCause());
+			System.out.println("=======" +e.getStackTrace().toString());
 			return "404";
 		}
 		return "200";
@@ -39,7 +41,9 @@ public class APIProducer {
 		try {
 			aMQProducerSvs.sendMsg(hello);
 		} catch(JmsException e) {
-			System.out.println("=======" +e.getStackTrace());
+			System.out.println("=======" +e.getMessage());
+			System.out.println("=======" +e.getCause());
+			System.out.println("=======" +e.getStackTrace().toString());
 			return "404";
 		}
 		return "200";
@@ -57,7 +61,8 @@ public class APIProducer {
 		 try {
 			 aMQProducerSvs.sendMsg("Hey, How are you?");
 		 } catch(JmsException e) {
-			    System.out.println("=======" +e.getStackTrace());
+				System.out.println("=======" +e.getMessage());
+				System.out.println("=======" +e.getCause());
 				return "404";
 			}
 			return "200";
