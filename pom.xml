@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.amqp.client.ocp4.demo</groupId>
-	<artifactId>amqp-client-ssl-opc4-demo</artifactId>
+	<artifactId>amq-broker-producer-opc4-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>amqp-client-ssl-opc4-demo</name>
+	<name>amq-broker-producer-opc4-demo</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
