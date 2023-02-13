@@ -1,8 +1,6 @@
 package com.amqp.client.ocp4.demo.services.impl;
 
 
-import javax.jms.JMSException;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.JmsException;
 import org.springframework.jms.annotation.EnableJms;
